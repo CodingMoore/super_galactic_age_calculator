@@ -1,9 +1,9 @@
 export class SolarSystem {
   constructor(mercury, venus, mars, jupiter) {
-    this.mercury = "Mercury";
-    this.venus = "Venus";
-    this.mars = "Mars";
-    this.jupiter = "Jupiter";
+    this.mercury = ["Mercury", .24];
+    this.venus = ["Venus", .62];
+    this.mars = ["Mars", 1.88];
+    this.jupiter = ["Jupiter", 11.86];
   }
 }
 
