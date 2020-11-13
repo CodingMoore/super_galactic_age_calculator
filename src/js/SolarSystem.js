@@ -12,8 +12,6 @@ export class SolarSystem {
     ageArray.push(this.venus[1] * person.age);
     ageArray.push(this.mars[1] * person.age);
     ageArray.push(this.jupiter[1] * person.age);
-    console.log(person.age);
-    console.log(typeof(person.age));
     return ageArray;
   }
 }

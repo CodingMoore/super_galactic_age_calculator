@@ -40,8 +40,16 @@ SolarSystem()
 |  |  |  |
 |  |  |  |
 |  |  |  |
+|  |  |  |
+Planet()
+| Should correctly create and instance of Planet() with properties 'name' and 'factor'. | planet | {name: "Mercury", factor: .24} |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
 Person()
 | Should correctlycreate an instance of Person(). | person | {name: "Bob", age: 50, lifeExpect: 100} |
+|  |  |  |
 |  |  |  |
 |  |  |  |
 |  |  |  |
@@ -65,6 +73,13 @@ Code: solarSystem = new SolarSystem()
 Code: person = new Person("Bob", 50, 100)
 Input: solarSystem.checkAge(person)
 Output: [12, 31, 94, 593]
+
+Description: Planet()
+
+Test: Should correctly create and instance of Planet() with properties 'name' and 'factor'.
+Code: planet = new Planet("Mercury", .24)
+Input: planet
+Output: {name: "Mercury", factor: .24}
 
 Description: Person()
 
