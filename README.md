@@ -41,10 +41,11 @@ No new features are planned at this time.
 |  |  |  |
 
 
-Description: Planets()
+Description: SolarSystem()
 
 Test: Should correctly create a an instance of Planets
-Expect: 
+Input: new SolarSystem()
+Output: solarStystem.planet === "Mercury", "Venus", "Mars", "Jupiter"
 
 Test: 
 Expect: 
