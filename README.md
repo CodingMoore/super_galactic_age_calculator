@@ -33,7 +33,7 @@ No new features are planned at this time.
 ## **Specs**
 | Test | Input | Output |
 | :-- | :--| :-- |
-|  |  |  |
+| Should correctly create a an instance of SolarSystem. | solarSystem | {mercury: "mercury", venus: "venus", mars: "mars", jupiter: "jupite"} |
 |  |  |  |
 |  |  |  |
 |  |  |  |
@@ -43,9 +43,10 @@ No new features are planned at this time.
 
 Description: SolarSystem()
 
-Test: Should correctly create a an instance of Planets
-Input: new SolarSystem()
-Output: solarStystem === "Mercury", "Venus", "Mars", "Jupiter"
+Test: Should correctly create a an instance of SolarSystem.
+Code: solarSystem = new SolarSystem()
+Input: solarSystem
+Output: {mercury: "mercury", venus: "venus", mars: "mars", jupiter: "jupiter"}
 
 Test: 
 Expect: 
