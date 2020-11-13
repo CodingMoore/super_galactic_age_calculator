@@ -18,6 +18,10 @@ describe('SolarSystem', () => {
     mars = new Planet("Mars", 1.88);
     jupiter = new Planet("Jupiter", 11.86);
     person = new Person("Bob", 50, 100);
+    solarSystem.addPlanet(mercury);
+    solarSystem.addPlanet(venus);
+    solarSystem.addPlanet(mars);
+    solarSystem.addPlanet(jupiter);
   });
 
   // test('Should correctly create a an instance of SolarSystem', () => {
@@ -39,7 +43,7 @@ describe('SolarSystem', () => {
   });
 
   test("Should correctly multiply a persons age by each planet's yearFactor", () => {
-    expect(solarSystem.yearFactor(person)).toEqual([12, 31, 94, 593]);
+    expect(solarSystem.yearFactor(person)).toEqual([12, 31, 94, 592]);
   });
 
 });

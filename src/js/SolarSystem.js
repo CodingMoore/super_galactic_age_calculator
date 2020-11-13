@@ -9,9 +9,10 @@ export class SolarSystem {
 
   yearFactor(person) {
     let ageArray = [];
-    this.planets.forEach(function(element) {
-      ageArray.push(this.planets.factor * person.age);
-    });
+    for (let i = 0; i < this.planets.length; i++) {
+      ageArray.push(this.planets[i].factor * person.age);
+    } 
+    return ageArray;
   }
 
   // yearFactor(person) {
