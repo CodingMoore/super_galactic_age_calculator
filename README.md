@@ -34,7 +34,7 @@ No new features are planned at this time.
 | Test | Input | Output |
 | :-- | :--| :-- |
 | Should correctly create a an instance of SolarSystem. | solarSystem | {mercury: "Mercury", venus: "Venus", mars: "Mars", jupiter: "Jupiter"} |
-|  |  |  |
+| Should correctly create an instance of SolarSystem with array properties. | solarSystem | {mercury: ["Mercury", .24], venus: ["Venus", .62], mars: ["Mars", 1.88], jupiter: ["Jupiter", 11.86]}  |
 |  |  |  |
 |  |  |  |
 |  |  |  |
@@ -48,8 +48,10 @@ Code: solarSystem = new SolarSystem()
 Input: solarSystem
 Output: {mercury: "Mercury", venus: "Venus", mars: "Mars", jupiter: "Jupiter"}
 
-Test: 
-Expect: 
+Test: Should correctly create an instance of SolarSystem with array properties.
+Code: solarSystem = new SolarSystem()
+Input: solarSystem
+Output: {mercury: ["Mercury", .24], venus: ["Venus", .62], mars: ["Mars", 1.88], jupiter: ["Jupiter", 11.86]} 
 
 
 ## **Known Bugs**
