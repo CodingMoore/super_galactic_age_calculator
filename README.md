@@ -33,26 +33,39 @@ No new features are planned at this time.
 ## **Specs**
 | Test | Input | Output |
 | :-- | :--| :-- |
+SolarSystem()
 | Should correctly create a an instance of SolarSystem. | solarSystem | {mercury: "Mercury", venus: "Venus", mars: "Mars", jupiter: "Jupiter"} |
 | Should correctly create an instance of SolarSystem with array properties. | solarSystem | {mercury: ["Mercury", .24], venus: ["Venus", .62], mars: ["Mars", 1.88], jupiter: ["Jupiter", 11.86]}  |
 |  |  |  |
-|  |  |  |
+Person()
+| Should correctlycreate an instance of Person(). | person | {name: "Bob", age: 50, lifeExpectancy: 100} |
 |  |  |  |
 |  |  |  |
 
 
 Description: SolarSystem()
 
-Test: Should correctly create a an instance of SolarSystem.
+Test: Should correctly create a an instance of SolarSystem().
 Code: solarSystem = new SolarSystem()
 Input: solarSystem
 Output: {mercury: "Mercury", venus: "Venus", mars: "Mars", jupiter: "Jupiter"}
 
-Test: Should correctly create an instance of SolarSystem with array properties.
+Test: Should correctly create an instance of SolarSystem() with array properties.
 Code: solarSystem = new SolarSystem()
 Input: solarSystem
 Output: {mercury: ["Mercury", .24], venus: ["Venus", .62], mars: ["Mars", 1.88], jupiter: ["Jupiter", 11.86]} 
 
+Description: Person()
+
+Test: Should correctlycreate an instance of Person().
+Code: person = new Person("Bob", 50, 100)
+Input: person
+Output: {name: "Bob", age: 50, lifeExpectancy: 100}
+
+Test:
+Code:
+Input:
+Output:
 
 ## **Known Bugs**
 There are no known bugs
