@@ -15,4 +15,4 @@ const { arguments } = require("file-loader")
 // life expectancy
 
 
-//use template literals for output statements (strings)
+//use template literals for output statements (strings).
