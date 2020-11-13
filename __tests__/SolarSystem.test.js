@@ -35,7 +35,11 @@ describe('SolarSystem', () => {
   test("Should correctly add an instance of Planet() to SolarSystem()", () => {
     solarSystem.addPlanet(mercury);
     expect(solarSystem.planets[0].name).toEqual("Mercury");
-    expect(solarSystem.planets[0].factor).toEqual(.23);
+    expect(solarSystem.planets[0].factor).toEqual(.24);
+  });
+
+  test("Should correctly multiply a persons age by each planet's yearFactor", () => {
+    expect(solarSystem.yearFactor(person)).toEqual([12, 31, 94, 593]);
   });
 
 });
