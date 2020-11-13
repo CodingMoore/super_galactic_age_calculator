@@ -14,15 +14,6 @@ export class SolarSystem {
     } 
     return ageArray;
   }
-
-  // yearFactor(person) {
-  //   let ageArray = [];
-  //   ageArray.push(this.mercury[1] * person.age);
-  //   ageArray.push(this.venus[1] * person.age);
-  //   ageArray.push(this.mars[1] * person.age);
-  //   ageArray.push(this.jupiter[1] * person.age);
-  //   return ageArray;
-  // }
 }
 
 

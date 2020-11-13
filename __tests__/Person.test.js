@@ -6,6 +6,7 @@ describe("Person", () => {
 
   beforeEach(() => {
     person = new Person("Bob", 50, 100)
+    
   });
 
   test('Should correctly create an instance of Person().', () => {
