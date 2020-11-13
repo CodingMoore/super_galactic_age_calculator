@@ -72,7 +72,7 @@ Test: Should correctly multiply a persons age by each planet's yearFactor.
 Code: solarSystem = new SolarSystem()
 Code: person = new Person("Bob", 50, 100)
 Input: solarSystem.checkAge(person)
-Output: [12, 31, 94, 593]
+Output: [208, 80, 26, 4]
 
 Test: Should correctly add an instance of Planet() to SolarSystem()
 Code: addPlanet(mercury)
