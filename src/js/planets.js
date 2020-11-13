@@ -1,4 +1,5 @@
-const { arguments } = require("file-loader")
+
+
 
 //pseudo code
 

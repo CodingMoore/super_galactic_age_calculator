@@ -45,7 +45,7 @@ Description: SolarSystem()
 
 Test: Should correctly create a an instance of Planets
 Input: new SolarSystem()
-Output: solarStystem.planet === "Mercury", "Venus", "Mars", "Jupiter"
+Output: solarStystem === "Mercury", "Venus", "Mars", "Jupiter"
 
 Test: 
 Expect: 
