@@ -1,10 +1,16 @@
 export class SolarSystem {
-  constructor(mercury, venus, mars, jupiter) {
-    this.mercury = ["Mercury", .24];
-    this.venus = ["Venus", .62];
-    this.mars = ["Mars", 1.88];
-    this.jupiter = ["Jupiter", 11.86];
+  constructor() {
+    this.planets = [];
   }
+
+  
+  // constructor(mercury, venus, mars, jupiter) {
+  //   this.mercury = ["Mercury", .24];
+  //   this.venus = ["Venus", .62];
+  //   this.mars = ["Mars", 1.88];
+  //   this.jupiter = ["Jupiter", 11.86];
+  // }
+
 
   yearFactor(person) {
     let ageArray = [];

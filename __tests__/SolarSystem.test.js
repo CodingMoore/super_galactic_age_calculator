@@ -1,13 +1,22 @@
 import { SolarSystem } from '../src/js/SolarSystem.js';
 import { Person } from '../src/js/Person.js';
+import { Planet } from '../src/js/Planet.js';
 
 describe('SolarSystem', () => {
   
   let solarSystem;
   let person;
+  let mercury;
+  let venus;
+  let mars;
+  let jupiter;
 
   beforeEach(() => {
     solarSystem = new SolarSystem();
+    mercury = new Planet("Mercury", .24);
+    venus = new Planet("Venus", .62);
+    mars = new Planet("Mars", 1.88);
+    jupiter = new Planet("Jupiter", 11.86);
     person = new Person("Bob", 50, 100);
   });
 

@@ -37,7 +37,7 @@ SolarSystem()
 | Should correctly create a an instance of SolarSystem. | solarSystem | {mercury: "Mercury", venus: "Venus", mars: "Mars", jupiter: "Jupiter"} |
 | Should correctly create an instance of SolarSystem with array properties. | solarSystem | {mercury: ["Mercury", .24], venus: ["Venus", .62], mars: ["Mars", 1.88], jupiter: ["Jupiter", 11.86]}  |
 | Should correctly multiply a persons age by each planet's yearFactor (solarsystem.planet[1]). | person | [12, 31, 94, 593] |
-|  |  |  |
+| Should correctly add an instance of Planet() to SolarSystem() | solarSystem.planets | [mercury{name: "Mercury", factor: .24}] |
 |  |  |  |
 |  |  |  |
 |  |  |  |
@@ -74,10 +74,15 @@ Code: person = new Person("Bob", 50, 100)
 Input: solarSystem.checkAge(person)
 Output: [12, 31, 94, 593]
 
+Test: Should correctly add an instance of Planet() to SolarSystem()
+Code: addPlanet(mercury)
+Input: solarSystem.planets
+Output: [mercury{name: "Mercury", factor: .24}]
+
 Description: Planet()
 
 Test: Should correctly create and instance of Planet() with properties 'name' and 'factor'.
-Code: planet = new Planet("Mercury", .24)
+Code: mercury = new Planet("Mercury", .24)
 Input: planet
 Output: {name: "Mercury", factor: .24}
 
