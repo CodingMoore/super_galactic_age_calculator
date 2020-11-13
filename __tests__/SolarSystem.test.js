@@ -34,7 +34,7 @@ describe('SolarSystem', () => {
 
   test("Should correctly add an instance of Planet() to SolarSystem()", () => {
     solarSystem.addPlanet(mercury);
-    expect(solarSystem.planets[0].name).toEqual("Mercur");
+    expect(solarSystem.planets[0].name).toEqual("Mercury");
     expect(solarSystem.planets[0].factor).toEqual(.23);
   });
 
