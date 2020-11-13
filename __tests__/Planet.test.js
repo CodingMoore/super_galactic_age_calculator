@@ -14,8 +14,8 @@ describe("Planet", () => {
   jupiter = new Planet("Jupiter", 11.86);
   });
 
-  Test("Should correctly create and instance of Planet() with properties 'name' and 'factor'.", () => {
-    expect(mercury).toEqual({name: "Mercury", .2})
+  test("Should correctly create and instance of Planet() with properties 'name' and 'factor'.", () => {
+    expect(mercury).toEqual({name: "Mercury", factor: .23})
   });
 
 });
