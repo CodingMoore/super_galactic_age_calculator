@@ -20,7 +20,7 @@ describe('SolarSystem', () => {
   });
 
   test("Should correctly multiply a persons age by each planet's yearFactor (solarsystem.planet[1])", () => {
-    expect(solarSystem.yearFactor(person)).toEqual([12, 31, 94, 594]);
+    expect(solarSystem.yearFactor(person)).toEqual([12, 31, 94, 593]);
   });
 
 });
