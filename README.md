@@ -38,7 +38,7 @@ SolarSystem()
 | Should correctly create an instance of SolarSystem with array properties. | solarSystem | {mercury: ["Mercury", .24], venus: ["Venus", .62], mars: ["Mars", 1.88], jupiter: ["Jupiter", 11.86]}  |
 |  |  |  |
 Person()
-| Should correctlycreate an instance of Person(). | person | {name: "Bob", age: 50, lifeExpectancy: 100} |
+| Should correctlycreate an instance of Person(). | person | {name: "Bob", age: 50, lifeExpect: 100} |
 |  |  |  |
 |  |  |  |
 
@@ -57,10 +57,10 @@ Output: {mercury: ["Mercury", .24], venus: ["Venus", .62], mars: ["Mars", 1.88],
 
 Description: Person()
 
-Test: Should correctlycreate an instance of Person().
+Test: Should correctly create an instance of Person().
 Code: person = new Person("Bob", 50, 100)
 Input: person
-Output: {name: "Bob", age: 50, lifeExpectancy: 100}
+Output: {name: "Bob", age: 50, lifeExpect: 100}
 
 Test:
 Code:
