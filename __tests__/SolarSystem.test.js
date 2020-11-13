@@ -24,12 +24,18 @@ describe('SolarSystem', () => {
   //   expect(solarSystem).toEqual({mercury: "Mercury", venus: "Venus", mars: "Mars", jupiter: "Jupiter"});
   // });
 
-  test('Should correctly create an instance of SolarSystem with array properties.', () => {
-    expect(solarSystem).toEqual({mercury: ["Mercury", .24], venus: ["Venus", .62], mars: ["Mars", 1.88], jupiter: ["Jupiter", 11.86]});
-  });
+  // test('Should correctly create an instance of SolarSystem with array properties.', () => {
+  //   expect(solarSystem).toEqual({mercury: ["Mercury", .24], venus: ["Venus", .62], mars: ["Mars", 1.88], jupiter: ["Jupiter", 11.86]});
+  // });
 
-  test("Should correctly multiply a persons age by each planet's yearFactor (solarsystem.planet[1])", () => {
-    expect(solarSystem.yearFactor(person)).toEqual([12, 31, 94, 593]);
+  // test("Should correctly multiply a persons age by each planet's yearFactor (solarsystem.planet[1])", () => {
+  //   expect(solarSystem.yearFactor(person)).toEqual([12, 31, 94, 593]);
+  // });
+
+  test("Should correctly add an instance of Planet() to SolarSystem()", () => {
+    solarSystem.addPlanet(mercury);
+    expect(solarSystem.planets[0].name).toEqual("Mercury");
+    expect(solarSystem.planets[0].factor).toEqual(.24);
   });
 
 });

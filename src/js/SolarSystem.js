@@ -3,7 +3,9 @@ export class SolarSystem {
     this.planets = [];
   }
 
-  
+  addPlanet(planet) {
+    this.planets.push(planet);
+  }
   // constructor(mercury, venus, mars, jupiter) {
   //   this.mercury = ["Mercury", .24];
   //   this.venus = ["Venus", .62];

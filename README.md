@@ -37,7 +37,7 @@ SolarSystem()
 | Should correctly create a an instance of SolarSystem. | solarSystem | {mercury: "Mercury", venus: "Venus", mars: "Mars", jupiter: "Jupiter"} |
 | Should correctly create an instance of SolarSystem with array properties. | solarSystem | {mercury: ["Mercury", .24], venus: ["Venus", .62], mars: ["Mars", 1.88], jupiter: ["Jupiter", 11.86]}  |
 | Should correctly multiply a persons age by each planet's yearFactor (solarsystem.planet[1]). | person | [12, 31, 94, 593] |
-| Should correctly add an instance of Planet() to SolarSystem() | solarSystem.planets | [mercury{name: "Mercury", factor: .24}] |
+| Should correctly add an instance of Planet() to SolarSystem() | solarSystem.planets[0].name, solarSystem.planets[0].factor | "Mercury", .24 |
 |  |  |  |
 |  |  |  |
 |  |  |  |
@@ -76,8 +76,10 @@ Output: [12, 31, 94, 593]
 
 Test: Should correctly add an instance of Planet() to SolarSystem()
 Code: addPlanet(mercury)
-Input: solarSystem.planets
-Output: [mercury{name: "Mercury", factor: .24}]
+Input: solarSystem.planets[0].name
+Input: solarSystem.planets[0].factor
+Output: "Mercury"
+Output: .24
 
 Description: Planet()
 
