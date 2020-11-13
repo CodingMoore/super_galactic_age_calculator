@@ -10,7 +10,7 @@ export class SolarSystem {
   yearFactor(person) {
     let ageArray = [];
     for (let i = 0; i < this.planets.length; i++) {
-      ageArray.push(this.planets[i].factor * person.age);
+      ageArray.push(Math.floor(person.age / this.planets[i].factor));
     } 
     return ageArray;
   }
