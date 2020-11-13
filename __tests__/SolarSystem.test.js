@@ -10,6 +10,6 @@ describe('SolarSystem', () => {
 
   test('Should correctly create a an instance of SolarSystem', () => {
     console.log(solarSystem)
-    expect(solarSystem).toEqual({mercury: "mercury", venus: "venus", mars: "mars", jupiter: "jupiter"});
+    expect(solarSystem).toEqual({mercury: "Mercury", venus: "Venus", mars: "Mars", jupiter: "Jupiter"});
   });
 });
