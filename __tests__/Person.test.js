@@ -9,7 +9,7 @@ describe("Person", () => {
   });
 
   test('Should correctly create an instance of Person().', () => {
-    expect(person).toEqual({name: "Bob", age: 50, lifeExpect: 101});
+    expect(person).toEqual({name: "Bob", age: 50, lifeExpect: 100});
   });
 
 });
