@@ -6,15 +6,9 @@ import { Person } from "../src/js/Person.js";
 import { Planet } from "../src/js/Planet.js";
 import { SolarSystem } from "../src/js/SolarSystem.js";
   
-function outputText() {
-    for (let i = 0; i < solarSystem.planets.length; i++) {
-      "<li>" + "On "  + solarSystem.planets[i].name + ", you would be " + solarSystem.planetAge[i] + " years old.  Given your life expectancy, of " + lifeExpect + " Earth years, you have about " + solarSystem.planetYearsLeft[i] + "-" + solarSystem.planets[i] + " left to life there." + "</li>"
-    }
-  }
 
 $("#submit").click(function(event) {
   event.preventDefault();
-  let ageArray = [];
   let solarSystem;
   let mercury;
   let venus;
@@ -36,7 +30,16 @@ $("#submit").click(function(event) {
   solarSystem.yearFactor(person);
   solarSystem.ageExpectFactor(person);
   solarSystem.lifeExpectancy(person);
-  $("#outputText1").text(name + "on Earth, you are " + age + " years old.");
-  $("#outputText2").text(outputText());
+  function outputText() {
+    for (let i = 0; i < solarSystem.planets.length; i++) {
+      if (solarSystem.planetAge[i] <= solarSystem.planetYearsLeft[i]) {
+        $("#outputText2").append("<li>" + "On "  + solarSystem.planets[i].name + ", you would be " + solarSystem.planetAge[i] + " years old.  Given your life expectancy, of " + lifeExpect + " Earth years, you have about " + solarSystem.planetYearsLeft[i] + " " + solarSystem.planets[i].name + "-" + "years left to life there." + "</li>" + "<br>");
+      } else {
+        $("#outputText2").append("<li>" + "On "  + solarSystem.planets[i].name + ", you would be " + solarSystem.planetAge[i] + " years old.  Given your life expectancy of " + lifeExpect + " Earth years, you have outlived your life expectancy by about " + (-solarSystem.planetYearsLeft[i]) + " " + solarSystem.planets[i].name + "-" + "years." + "</li>" + "<br>");
+      }
+    }
+  }
+  $("#outputText1").text(name + " on Earth, you are " + age + " years old.");
+  outputText();
 });
 
