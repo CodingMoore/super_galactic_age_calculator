@@ -1,6 +1,9 @@
 export class SolarSystem {
   constructor() {
     this.planets = [];
+    this.planetAge = [];
+    this.planetLifeExpect = [];
+    this.planetYearsLeft = [];
   }
 
   addPlanet(planet) {
@@ -8,43 +11,23 @@ export class SolarSystem {
   }
 
   yearFactor(person) {
-    let ageArray = [];
     for (let i = 0; i < this.planets.length; i++) {
-      ageArray.push(Math.floor(person.age / this.planets[i].factor));
+      this.planetAge.push(Math.floor(person.age / this.planets[i].factor));
     } 
-    return ageArray;
+    return this.planetAge;
   }
 
   ageExpectFactor(person) {
-    let ageExpectArray = [];
     for (let i = 0; i < this.planets.length; i++) {
-      ageExpectArray.push(Math.floor(person.lifeExpect / this.planets[i].factor));
+      this.planetLifeExpect.push(Math.floor(person.lifeExpect / this.planets[i].factor));
     } 
-    return ageExpectArray;
+    return this.planetLifeExpect;
   }
 
   lifeExpectancy(person) {
-    let lifeExpectancyArray = [];
     for (let i = 0; i < this.planets.length; i++) {
-      lifeExpectancyArray.push(Math.floor(person.lifeExpect / this.planets[i].factor) - Math.floor(person.age / this.planets[i].factor));
+      this.planetYearsLeft.push(Math.floor(person.lifeExpect / this.planets[i].factor) - Math.floor(person.age / this.planets[i].factor));
     } 
-    return lifeExpectancyArray;
+    return this.planetYearsLeft;
   } 
 }
-
-//pseudo code
-
-//input age
-//input life expectancy
-
-//class (
-// planet1
-// planet2
-// planet3)
-
-//constructor person(
-// age
-// life expectancy
-
-
-//use template literals for output statements (strings).
