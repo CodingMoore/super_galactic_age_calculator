@@ -26,7 +26,7 @@ export class SolarSystem {
   lifeExpectancy(person) {
     let lifeExpectancyArray = [];
     for (let i = 0; i < this.planets.length; i++) {
-      lifeExpectancyArray.push(Math.floor((person.lifeExpect / this.planets[i].factor)-(person.age / this.planets[i].factor)));
+      lifeExpectancyArray.push(Math.floor(person.lifeExpect / this.planets[i].factor) - Math.floor(person.age / this.planets[i].factor));
     } 
     return lifeExpectancyArray;
   } 

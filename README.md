@@ -94,7 +94,7 @@ Output: [416, 161, 53, 8]
 
 Test: Should correctly determine the expect remaining planet-years of life.
 Input: ageArray - lifeExpectArray
-Output: [208, 80, 26, 4]
+Output: [208, 81, 27, 4]
 
 Description: Planet()
 
