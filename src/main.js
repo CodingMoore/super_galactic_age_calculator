@@ -30,12 +30,17 @@ $("#submit").click(function(event) {
   solarSystem.yearFactor(person);
   solarSystem.ageExpectFactor(person);
   solarSystem.lifeExpectancy(person);
+  
   function outputText() {
     for (let i = 0; i < solarSystem.planets.length; i++) {
-      if (solarSystem.planetAge[i] <= solarSystem.planetYearsLeft[i]) {
-        $("#outputText2").append("<li>" + "On "  + solarSystem.planets[i].name + ", you would be " + solarSystem.planetAge[i] + " years old.  Given your life expectancy, of " + lifeExpect + " Earth years, you have about " + solarSystem.planetYearsLeft[i] + " " + solarSystem.planets[i].name + "-" + "years left to life there." + "</li>" + "<br>");
+      let planetName = solarSystem.planets[i].name;
+      let planetAge = solarSystem.planetAge[i];
+      let planetYearsLeft = solarSystem.planetYearsLeft[i];
+      let planetOutlived = (-solarSystem.planetYearsLeft[i]);
+      if (`${planetAge}` <= `${planetYearsLeft}`) {
+        $("#outputText2").append(`<li> On ${planetName}, you would be ${planetAge} years old.  Given your life expectancy of ${lifeExpect} Earth years, you have about ${planetYearsLeft} ${planetName}-years left to life there.</li><br>`);
       } else {
-        $("#outputText2").append("<li>" + "On "  + solarSystem.planets[i].name + ", you would be " + solarSystem.planetAge[i] + " years old.  Given your life expectancy of " + lifeExpect + " Earth years, you have outlived your life expectancy by about " + (-solarSystem.planetYearsLeft[i]) + " " + solarSystem.planets[i].name + "-" + "years." + "</li>" + "<br>");
+        $("#outputText2").append(`<li>On ${planetName}, you would be ${planetAge} years old.  Given your life expectancy of ${lifeExpect} Earth years, you have outlived your life expectancy by about ${planetOutlived} ${planetName}-years.</li><br>`);
       }
     }
   }
