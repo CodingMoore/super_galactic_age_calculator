@@ -30,7 +30,8 @@ $("#submit").click(function(event) {
   solarSystem.yearFactor(person);
   solarSystem.ageExpectFactor(person);
   solarSystem.lifeExpectancy(person);
-  
+  $("#outputText2").empty();
+
   function outputText() {
     for (let i = 0; i < solarSystem.planets.length; i++) {
       let planetName = solarSystem.planets[i].name;
