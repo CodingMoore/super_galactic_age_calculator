@@ -12,7 +12,6 @@ describe('SolarSystem', () => {
   let jupiter;
 
   beforeEach(() => {
-    // let lifeExpectancyArray;
     solarSystem = new SolarSystem();
     mercury = new Planet("Mercury", .24);
     venus = new Planet("Venus", .62);

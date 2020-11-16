@@ -5,6 +5,12 @@ import './css/styles.css';
 import { Person } from "../src/js/Person.js";
 import { Planet } from "../src/js/Planet.js";
 import { SolarSystem } from "../src/js/SolarSystem.js";
+  
+function outputText() {
+    for (let i = 0; i < solarSystem.planets.length; i++) {
+      "<li>" + "On "  + solarSystem.planets[i].name + ", you would be " + solarSystem.planetAge[i] + " years old.  Given your life expectancy, of " + lifeExpect + " Earth years, you have about " + solarSystem.planetYearsLeft[i] + "-" + solarSystem.planets[i] + " left to life there." + "</li>"
+    }
+  }
 
 $("#submit").click(function(event) {
   event.preventDefault();
@@ -27,10 +33,10 @@ $("#submit").click(function(event) {
   let age = $("#age").val();
   let lifeExpect = $("#lifeExpect").val();
   let person = new Person(name, age, lifeExpect);
-  // ageArray = solarSystem.yearFactor(person);
-  console.log(solarSystem.yearFactor(person));
-  let yearsLeft = lifeExpect - ageArray[0];
-  $("#outputText").text(name + ", on Mercury, you would be " + ageArray[0] + " years old.  You have about " + yearsLeft + " to live.");
+  solarSystem.yearFactor(person);
+  solarSystem.ageExpectFactor(person);
+  solarSystem.lifeExpectancy(person);
+  $("#outputText1").text(name + "on Earth, you are " + age + " years old.");
+  $("#outputText2").text(outputText());
 });
-
 

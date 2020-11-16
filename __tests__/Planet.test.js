@@ -9,7 +9,7 @@ describe("Planet", () => {
   });
 
   test("Should correctly create and instance of Planet() with properties 'name' and 'factor'.", () => {
-    expect(mercury).toEqual({name: "Mercury", factor: .24})
+    expect(mercury).toEqual({name: "Mercury", factor: .24});
   });
 
 });
