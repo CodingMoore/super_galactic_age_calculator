@@ -87,6 +87,11 @@ Input: solarSystem.planets[0].factor
 Output: "Mercury"
 Output: .24
 
+Test: Should correctly determine a persons life expectancy in planet-years.
+Code: person = new Person("Bob, 50, 100)
+Input: solarSystem.checkLifeExpect(person)
+Output: [416, 160, 52, 8]
+
 Description: Planet()
 
 Test: Should correctly create and instance of Planet() with properties 'name' and 'factor'.
