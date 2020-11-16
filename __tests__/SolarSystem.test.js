@@ -12,6 +12,7 @@ describe('SolarSystem', () => {
   let jupiter;
 
   beforeEach(() => {
+    // let lifeExpectancyArray;
     solarSystem = new SolarSystem();
     mercury = new Planet("Mercury", .24);
     venus = new Planet("Venus", .62);
@@ -53,4 +54,9 @@ describe('SolarSystem', () => {
     expect(solarSystem.ageExpectFactor(person)).toEqual([416, 161, 53, 8]);
   });
   
+  test("Should correctly determine the expect remaining planet-years of life.", () => {
+    
+    expect(solarSystem.lifeExpectancy(person)).toEqual([208, 81, 27, 5]);
+  })
+
 });

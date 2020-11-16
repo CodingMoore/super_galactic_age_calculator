@@ -22,6 +22,14 @@ export class SolarSystem {
     } 
     return ageExpectArray;
   }
+
+  lifeExpectancy(person) {
+    let lifeExpectancyArray = [];
+    for (let i = 0; i < this.planets.length; i++) {
+      lifeExpectancyArray.push(Math.floor((person.lifeExpect / this.planets[i].factor)-(person.age / this.planets[i].factor)));
+    } 
+    return lifeExpectancyArray;
+  } 
 }
 
 //pseudo code
