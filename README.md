@@ -90,7 +90,7 @@ Output: .24
 Test: Should correctly determine a persons life expectancy in planet-years.
 Code: person = new Person("Bob, 50, 100)
 Input: solarSystem.checkLifeExpect(person)
-Output: [416, 160, 52, 8]
+Output: [416, 161, 53, 8]
 
 Description: Planet()
 
