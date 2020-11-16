@@ -92,6 +92,10 @@ Code: person = new Person("Bob, 50, 100)
 Input: solarSystem.checkLifeExpect(person)
 Output: [416, 161, 53, 8]
 
+Test: Should correctly determine the expect remaining planet-years of life.
+Input: ageArray - lifeExpectArray
+Output: [208, 81, 27, 4]
+
 Description: Planet()
 
 Test: Should correctly create and instance of Planet() with properties 'name' and 'factor'.
