@@ -55,7 +55,7 @@ describe('SolarSystem', () => {
   });
   
   test("Should correctly determine the expect remaining planet-years of life.", () => {
-    expect(solarSystem.lifeExpectancy(person)).toEqual([208, 81, 27, 5]);
+    expect(solarSystem.lifeExpectancy(person)).toEqual([208, 81, 27, 4]);
   });
 
 });
