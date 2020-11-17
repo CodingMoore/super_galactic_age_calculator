@@ -10,16 +10,32 @@ A browser that can run HTML5 is required.
 1) Copy and paste the following GitHub project link into your web browser's url bar and hit enter/return. https://github.com/RMGit-it/super_galactic_age_calculator
 2) Download a .zip copy the repository by clicking on the large green "Code" button near the upper right corner of the screen.
 3) Right click the .zip file and extract(unzip) it's contents.
-4) Open the unzipped folder and launch the file named "index.html".  If the file does not automatically launch using your default web browser, you can right click on the file and choose which application you would like to open the index.html file with.
+4) Open the unzipped folder/files using Visual Studio, Visual Studio Code, or similar source code editing program.  Install all required dependencies from the package.JSON folder, and then build the program.  If you are using Node Package Manager, first navigate to the root directory of the project in your console.  You can then type the following commands to install and build the program.
+
+    <code>npm install</code>
+
+    <code>npm run build</code>
+
+    Once the code is built, a "div" directory will be created in the root directory of the project.  Launch the "index.html" file found here and it should open with your default web browser.
 
 **Option 2** (via git console/terminal)
 1) Open your Git enabled terminal/console and navigate to a directory that you wish to download this project to.
 2) Type the following line of code into your terminal/console to automatically download the project to your current direcory and hit return/enter
 
-<code>git clone https://github.com/RMGit-it/super_galactic_age_calculator</code>
+    <code>git clone https://github.com/RMGit-it/super_galactic_age_calculator</code><br>
+
 3) Once the project has finished downloading, navigate to the root directory of the project in the terminal/console, and type <code>code .</code> and then hit return/enter.
 
-The project should automatically launch using your default application(s).
+    The project should automatically launch using your default source code editor.
+
+4) Install all required dependencies from the package.JSON folder, and then build the program.  If you are using Node Package Manager, first navigate to the root directory of the project in your console.  You can then type the following commands to install and build the program.
+
+    <code>npm install</code>
+
+    <code>npm run build</code>
+
+    Once the code is built, a "div" directory will be created in the root directory of the project.  Launch the "index.html" file found here and it should open with your default web browser.
+
 ## **Usage / Examples**
 Name: Pat<br>
 Age: 50<br>
