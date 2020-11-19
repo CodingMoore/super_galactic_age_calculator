@@ -9,16 +9,11 @@ import { SolarSystem } from "../src/js/SolarSystem.js";
 
 $("#submit").click(function(event) {
   event.preventDefault();
-  let solarSystem;
-  let mercury;
-  let venus;
-  let mars;
-  let jupiter;
-  solarSystem = new SolarSystem();
-  mercury = new Planet("Mercury", .24);
-  venus = new Planet("Venus", .62);
-  mars = new Planet("Mars", 1.88);
-  jupiter = new Planet("Jupiter", 11.86);
+  let solarSystem = new SolarSystem();
+  let mercury = new Planet("Mercury", .24);
+  let venus = new Planet("Venus", .62);
+  let mars = new Planet("Mars", 1.88);
+  let jupiter = new Planet("Jupiter", 11.86);
   solarSystem.addPlanet(mercury);
   solarSystem.addPlanet(venus);
   solarSystem.addPlanet(mars);
